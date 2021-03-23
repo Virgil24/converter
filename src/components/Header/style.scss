@@ -1,0 +1,27 @@
+@use 'src/styles/vars';
+
+.header {
+  background-color: vars.$color-primary;
+  padding: vars.$gutter * 2;
+  text-align: center;
+  &__title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: vars.$gutter;
+  }
+  &__base-amount {
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__input {
+    border: none;
+    background-color: transparent;
+    color: vars.$color-light;
+    direction: rtl;
+    width: 50%;
+    font-size: 1.2em;
+    font-family: inherit;
+  }
+}

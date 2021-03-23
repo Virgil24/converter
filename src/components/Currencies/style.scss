@@ -1,0 +1,37 @@
+@use 'src/styles/vars';
+
+.currencies {
+  background-color: vars.$color-light;
+  color: vars.$color-primary;
+  overflow: auto;
+  max-height: 300px;
+  &__title {
+    font-weight: 700;
+    padding: vars.$gutter;
+    padding-top: vars.$gutter * 1.5;
+  }
+  &__search {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    padding: vars.$gutter;
+    padding-top: vars.$gutter * 1.5;
+    color: vars.$color-primary;
+    &::placeholder {
+      color: vars.$color-alt;
+    }
+  }
+}
+
+.currency {
+  border-top: 1px solid vars.$color-alt;
+  padding: vars.$gutter;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color vars.$transition-slow;
+  &:hover {
+    transition: background-color vars.$transition-fast;
+    background-color: vars.$color-alt;
+  }
+}
